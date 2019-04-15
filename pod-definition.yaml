@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: #Dictionary / in value position multiple non-repeted key-values
+  name: myapp-pod # name and labels keys are predefined; not arbitrary; could be other
+  labels: #Dictionary / in value position multiple key-values 
+    app: myapp # arbitrary
+    type: front-end # arbitrary
+spec: #Dictionary
+  containers: # List / Array / multiple repeted key-values
+    - name: nginx-container # - indicated the first item / item starting point 
+      image: nginx
+      
