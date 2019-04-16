@@ -33,3 +33,8 @@ Selector section will consider pods that are
 created earlier mathcing with 
 spec: template: section. 
 ```
+## Deployment
+```
+Deployment and ReplicaSet are same only the
+difference in the objevt type.  
+```
