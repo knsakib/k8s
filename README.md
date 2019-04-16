@@ -23,3 +23,13 @@ spec: #Dictionary
     - name: # - indicated the first item / item starting point 
       image: 
 ```
+## Replication Controller / Replica Set
+```
+Replication COntroller or ReplicaSet will make sure
+that the pods are always running, even when the 
+number of pods are one. Replication Controller
+also helps loadbalancing among multiple pods.
+Selector section will consider pods that are 
+created earlier mathcing with 
+spec: template: section. 
+```
