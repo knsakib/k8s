@@ -38,12 +38,18 @@ kubectl get services
 
 ### worker-app Pod Creation
 ```
-kubectl create -f postgres-pod.yaml
+kubectl create -f worker-app-pod.yaml
 kubectl get pods
 ```
 
-### worker-app Pod Creation
+### result-app Pod Creation
 ```
-kubectl create -f postgres-pod.yaml
+kubectl create -f result-app-pod.yaml
 kubectl get pods
+```
+
+### result-app Service Creation
+```
+kubectl create -f result-app-service.yaml
+kubectl get services
 ```
