@@ -1,10 +1,49 @@
-## Sample Application
-```
-docker run -d --name=redis redis
-docker run -d --name=db postgres:9.4
-docker run -d --name=vote -p 5000:80 --link redis:redis docker/example-voting-app-vote
-docker run -d --name=result -p 5001:80 --link db:db docker/example-voting-app-result
-docker run -d --name=worker --link db:db --link redis:redis docker/example-voting-app-worker
+## Sample Application Local Kubernetes 
 
-docker stop $(docker ps -a -q)
+### voting-app Pod Creation
+```
+kubectl create -f voting-app-pod.yaml
+kubectl get pods
+```
+
+### voting-app Service Creation
+```
+kubectl create -f voting-app-service.yaml
+kubectl get services 
+```
+
+### redis Pod Creation
+```
+kubectl create -f redis-pod.yaml
+kubectl get pods
+```
+
+### redis Service Creation
+```
+kubectl create -f redis-service.yaml
+kubectl get services 
+```
+
+### postgres Pod Creation
+```
+kubectl create -f postgres-pod.yaml
+kubectl get pods
+```
+
+### postgres Service Creation
+```
+kubectl create -f postgres-service.yaml
+kubectl get services
+```
+
+### worker-app Pod Creation
+```
+kubectl create -f postgres-pod.yaml
+kubectl get pods
+```
+
+### worker-app Pod Creation
+```
+kubectl create -f postgres-pod.yaml
+kubectl get pods
 ```
