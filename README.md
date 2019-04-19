@@ -1,9 +1,9 @@
 ## Sample Application Local Kubernetes 
 
-### voting-app Pod Creation
+### voting-app Deployment Creation
 ```
-kubectl create -f voting-app-pod.yaml
-kubectl get pods
+kubectl create -f voting-app-Deployment.yaml
+kubectl get Deployments
 ```
 
 ### voting-app Service Creation
@@ -12,10 +12,10 @@ kubectl create -f voting-app-service.yaml
 kubectl get services 
 ```
 
-### redis Pod Creation
+### redis Deployment Creation
 ```
-kubectl create -f redis-pod.yaml
-kubectl get pods
+kubectl create -f redis-Deployment.yaml
+kubectl get Deployments
 ```
 
 ### redis Service Creation
@@ -24,10 +24,10 @@ kubectl create -f redis-service.yaml
 kubectl get services 
 ```
 
-### postgres Pod Creation
+### postgres Deployment Creation
 ```
-kubectl create -f postgres-pod.yaml
-kubectl get pods
+kubectl create -f postgres-Deployment.yaml
+kubectl get Deployments
 ```
 
 ### postgres Service Creation
@@ -36,16 +36,16 @@ kubectl create -f postgres-service.yaml
 kubectl get services
 ```
 
-### worker-app Pod Creation
+### worker-app Deployment Creation
 ```
-kubectl create -f worker-app-pod.yaml
-kubectl get pods
+kubectl create -f worker-app-Deployment.yaml
+kubectl get Deployments
 ```
 
-### result-app Pod Creation
+### result-app Deployment Creation
 ```
-kubectl create -f result-app-pod.yaml
-kubectl get pods
+kubectl create -f result-app-Deployment.yaml
+kubectl get Deployments
 ```
 
 ### result-app Service Creation
