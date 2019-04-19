@@ -1,14 +1,21 @@
 ## Sample Application Local Kubernetes 
 
-### voting-app Deployment Creation
 ```
-kubectl create -f voting-app-Deployment.yaml
+Not usre if this yaml implementation works or not.
+Git: https://github.com/kubernetes/examples/tree/master/guestbook
+Docker hub: https://hub.docker.com/r/kubernetes/guestbook
+Instruction???: https://github.com/kubernetes/examples/blob/master/guestbook-go/README.md
+```
+
+### guestbook-app Deployment Creation
+```
+kubectl create -f guestbook-app-Deployment.yaml
 kubectl get Deployments
 ```
 
-### voting-app Service Creation
+### guestbook-app Service Creation
 ```
-kubectl create -f voting-app-service.yaml
+kubectl create -f guestbook-app-service.yaml
 kubectl get services 
 ```
 
@@ -22,34 +29,4 @@ kubectl get Deployments
 ```
 kubectl create -f redis-service.yaml
 kubectl get services 
-```
-
-### postgres Deployment Creation
-```
-kubectl create -f postgres-Deployment.yaml
-kubectl get Deployments
-```
-
-### postgres Service Creation
-```
-kubectl create -f postgres-service.yaml
-kubectl get services
-```
-
-### worker-app Deployment Creation
-```
-kubectl create -f worker-app-Deployment.yaml
-kubectl get Deployments
-```
-
-### result-app Deployment Creation
-```
-kubectl create -f result-app-Deployment.yaml
-kubectl get Deployments
-```
-
-### result-app Service Creation
-```
-kubectl create -f result-app-service.yaml
-kubectl get services
 ```
